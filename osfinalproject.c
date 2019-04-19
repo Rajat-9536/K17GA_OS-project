@@ -190,13 +190,13 @@ else
 time_in_system++;
 }
 }
-int sumwt=0,sumtat=0;
+int sumwaiting=0,sumturnaroundtime=0;
 for(int i=0;i<n;i++)
 	{
            printf("\n\nprocess process_id=%d\t:::complitiontime=%d\t:::turnaroundtime=%d\t:::watingtime=%d",pro_det[i].process_id,pro_det[i].complitiontime,pro_det[i].turnaroundtime,pro_det[i].watingtime);
-           sumwt+=pro_det[i].watingtime;
-           sumtat+=pro_det[i].turnaroundtime;
+           sumwaiting+=pro_det[i].watingtime;
+           sumturnaroundtime+=pro_det[i].turnaroundtime;
            
 	}
-printf("\n\n Avergae turnaroundtime=%f \t::: Average watingtime=%f\n\n",(sumtat/(n*1.0)),(sumwt/(n*1.0)));
+printf("\n\n Avergae turnaroundtime=%f \t::: Average watingtime=%f\n\n",(sumturnaroundtime/(n*1.0)),(sumwaiting/(n*1.0)));
 }
